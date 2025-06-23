@@ -4,7 +4,7 @@ L'application sera accessible : ttps://huggingface.co/spaces/matrix3364/Derniers
 
 Description :
 
-Derniers Flocons est une application Streamlit qui analyse les données météorologiques françaises pour identifier et visualiser les derniers épisodes neigeux sur le territoire national.
+Derniers Flocons est une application Streamlit qui analyse les données météorologiques françaises pour identifier et visualiser les derniers épisodes neigeux sur le territoire alpin.
 Fonctionnalités clés
 •	 Analyse météorologique - Traitement de données de 148 stations
 •	 Visualisation géographique - Cartes interactives des épisodes neigeux
