@@ -1,4 +1,4 @@
-Application web interactive pour l'analyse des derniers épisodes neigeuses dans les Alpes
+Application web interactive pour l'analyse des derniers épisodes neigeux dans les Alpes
 
 L'application sera accessible : ttps://huggingface.co/spaces/matrix3364/Derniers_Flocons
 
@@ -6,9 +6,9 @@ Description :
 
 Derniers Flocons est une application Streamlit qui analyse les données météorologiques françaises pour identifier et visualiser les derniers épisodes neigeux sur le territoire national.
 Fonctionnalités clés
-•	🌡️ Analyse météorologique - Traitement de données de 148 stations
-•	🗺️ Visualisation géographique - Cartes interactives des épisodes neigeux
-•	📊 Statistiques avancées - Analyses temporelles et spatiales
+•	 Analyse météorologique - Traitement de données de 148 stations
+•	 Visualisation géographique - Cartes interactives des épisodes neigeux
+•	 Statistiques avancées - Analyses temporelles et spatiales
 
 Technologies utilisées
 •	Python - Pandas - Prophète
@@ -18,10 +18,10 @@ Technologies utilisées
 
 Structure du projet
 Derniers_Flocons/
-├── app.py                 # Application Streamlit principale
-├── requirements.txt       # Dépendances Python
-├── README.md              # Documentation du projet
-└── images/                
+• app.py                 # Application Streamlit principale
+• requirements.txt       # Dépendances Python
+• README.md              # Documentation du projet
+• images                
 
 Données
 L'application traite des données météorologiques volumineuses 
