@@ -5,11 +5,11 @@ L'application sera accessible : [Lien du site](ttps://huggingface.co/spaces/matr
 
 Description :
 
-Derniers Flocons est une application Streamlit qui analyse les données météorologiques françaises pour identifier et visualiser les derniers épisodes neigeux sur le territoire alpin.
-Fonctionnalités clés
-•	 Analyse météorologique - Traitement de données de 148 stations
-•	 Visualisation géographique - Cartes interactives des épisodes neigeux
-•	 Statistiques avancées - Analyses temporelles et spatiales
+Le projet « Les Derniers Flocons » vise à anticiper l’impact du changement climatique sur l’activité des stations de ski.
+En s’appuyant sur des données météorologiques historiques (depuis 1970) et des modèles de prévision,
+l’application estime l’évolution future de la neige et de la température afin de prédire les risques de fermeture des stations à une date donnée.
+Cette plateforme, développée sous Streamlit, s’adresse principalement aux professionnels de la montagne (gestionnaires de stations, exploitants touristiques)
+ainsi qu’aux décideurs publics
 
 Technologies utilisées
 •	Python - Pandas - Prophète
@@ -25,14 +25,35 @@ Derniers_Flocons/
 • images                
 
 Données
-L'application traite des données météorologiques volumineuses 
-•	Données de température
-•	Précipitations
-•	Conditions météorologiques
-•	Géolocalisation des stations
+Les données proviennent de l’API open-meteo.com et couvrent 148 stations de ski situées dans les Alpes françaises.
+Elles intègrent des mesures journalières agrégées:\n
+- Température moyenne de l’air,\n
+- Température du sol (de 0 à -100 cm),\n
+- Somme des chutes de neige,\n
+- Équivalent en eau des chutes de neige,\n
+- Somme des précipitations pluvieuses,\n
+- Durée d’ensoleillement,\n
+- Vitesse moyenne du vent,\n
+- Couverture nuageuse,\n
+Des informations sur les stations déjà fermées (incluant leur date de fermeture) ont également été collectées afin d’entraîner un modèle prédictif.\n
 
-Auteur
-matrix3364
-•	GitHub: @matrix3364
-•	Application: Derniers Flocons sur Hugging Face
+***Méthodologie***\n
+- Collecte & nettoyage des données.\n
+- Scraping des stations de ski (Savoie, Haute-Savoie, Isère).\n
+- Récupération des coordonnées GPS et de l’altitude.\n
+- Extraction via API des données météorologiques historiques (1970–2024).\n
+- Intégration des dates de fermeture pour les stations déjà inactives.\n
+- Détection et correction des valeurs aberrantes.\n
+  
+***Analyse exploratoire***\n
+- Étude des tendances saisonnières et climatiques.\n
+- Comparaisons par altitude et région.\n
+
+***Modélisation & prévision***\n
+- Visualisation de l’évolution climatique station par station.\n
+- Modélisation des séries temporelles avec Prophet (températures, neige).\n
+- Analyse de survie (survival analysis) pour estimer le risque de fermeture dans le temps.\n
+
+
+
 
